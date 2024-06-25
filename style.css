@@ -38,7 +38,7 @@ footer {
     color: white; 
 }
 
-/* Body Content Style */
+/* Index Page Styles */
 .profile-image {
     height: auto;
     max-width: 150px; 
@@ -112,4 +112,32 @@ footer {
 
 .social-media img:hover {
     transform: scale(1.5);
+}
+
+/* Project Page Styles */
+
+.projects {
+    display: grid;
+    margin-top: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.project-items {
+    background: whitesmoke;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    text-align: center;
+}
+
+.projectImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.project-items h3 {
+    margin: 16px 0 8px;
 }
