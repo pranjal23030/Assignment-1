@@ -127,7 +127,7 @@ footer {
     background: whitesmoke;
     padding: 16px;
     border-radius: 8px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
     text-align: center;
 }
 
@@ -140,4 +140,77 @@ footer {
 
 .project-items h3 {
     margin: 16px 0 8px;
+}
+
+/* Contact Page Styles */
+
+.contact-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.my-contact .contact-form { 
+    flex-grow: 1;
+    box-sizing: border-box;
+}
+
+.my-contact {
+    background: whitesmoke;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+    max-width: 70%;
+}
+
+.my-contact img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    background-color: #7a3f3f; 
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+}
+
+.contact-form label {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 2px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 12px;
+    border: none;
+    font-weight: bolder;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+
+}
+
+.contact-form button:hover {
+    background-color: rgb(196, 187, 171);
+    transform: translateY(-2px);
+}
+
+.contact-form button:active {
+    transform: translateY(0);
 }
