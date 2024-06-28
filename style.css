@@ -214,3 +214,14 @@ footer {
 .contact-form button:active {
     transform: translateY(0);
 }
+
+/* Video Demo Page Styles */
+.video-demo {
+    display: flex;
+    margin-top: 32px;
+}
+
+.video-demo iframe {
+    border-radius: 8px;
+    box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+}
