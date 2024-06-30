@@ -225,3 +225,25 @@ footer {
     border-radius: 8px;
     box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
 }
+
+/* Report Page Styles */
+.report p {
+    text-align: justify;
+    margin-bottom: 16px; 
+    line-height: 1.5;
+}
+
+.report p a:hover {
+    color: #1c6cc2;
+    cursor: pointer;
+}
+
+.validation {
+    margin-top: 32px;
+}
+
+.references a:hover {
+    color: #1c6cc2;
+    cursor: pointer;
+}
+
