@@ -88,8 +88,8 @@ footer {
 /* Profile Image Style */
 .profile-image {
     height: auto;
-    max-width: 150px; 
-    border-radius: 40%; 
+    max-width: 300px; 
+    border-radius: 20%; 
 }
 
 /* Skills Styles */
