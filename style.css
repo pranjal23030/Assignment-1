@@ -8,16 +8,6 @@ body {
     font-size: large;
 }
 
-header label, #hamburger {
-    display: none;
-}
-
-header label {
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
 /* Header Styles */
 header {
     background: #491b1b; 
@@ -39,6 +29,18 @@ header nav a {
 
 header nav a:hover {
     background: #805252; 
+}
+
+#hamburger-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 /* Footer Styles */
@@ -73,6 +75,7 @@ footer {
 }
 
 /* Index Page Styles */
+
 .profile-image {
     height: auto;
     max-width: 150px; 
@@ -97,6 +100,7 @@ footer {
 }
 
 /* Profile Image Style */
+
 .profile-image {
     height: auto;
     max-width: 300px; 
@@ -104,6 +108,7 @@ footer {
 }
 
 /* Skills Styles */
+
 .skills-interests {
     display: flex;
     justify-content: space-between;
@@ -126,6 +131,7 @@ footer {
 }
 
 /* Social Media Styles */
+
 .social-media {
     margin-top: 32px;
 }
@@ -284,23 +290,10 @@ footer {
 
 .validation img {
     max-width: 1200px;
-    height: 1200px; 
-}
-
-#hamburger-toggle {
-    display: none;
-}
-
-.hamburger-icon {
-    display: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
+    height: 1100px; 
 }
 
 @media screen and (max-width: 600px) {
-
     header {
         padding: 0;
     }
@@ -329,7 +322,7 @@ footer {
     #hamburger-toggle:checked ~ nav {
         display: flex;
     }
-    
+
     .intro {
         flex-direction: column;
         align-items: center;
@@ -384,5 +377,23 @@ footer {
     .video-demo iframe {
         width: 100%;
         height: 315px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .report p {
+        font-size: 16px;
+    }
+
+    .validation img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;
     }
 }
