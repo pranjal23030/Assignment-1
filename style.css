@@ -8,6 +8,16 @@ body {
     font-size: large;
 }
 
+header label, #hamburger {
+    display: none;
+}
+
+header label {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
 /* Header Styles */
 header {
     background: #491b1b; 
@@ -272,16 +282,54 @@ footer {
     cursor: pointer;
 }
 
+.validation img {
+    max-width: 1200px;
+    height: 1200px; 
+}
+
+#hamburger-toggle {
+    display: none;
+}
+
+.hamburger-icon {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
 @media screen and (max-width: 600px) {
+
+    header {
+        padding: 0;
+    }
+
+    .hamburger-icon {
+        display: block;
+        text-align: left;
+        padding: 16px;
+    }
+
     header nav {
-        align-items: center;
+        display: none;
         flex-direction: column;
+        width: 100%;
+        background: #491b1b;
     }
 
-    header nav a { 
-        margin: 8px 0;
+    header nav a {
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
+    #hamburger-toggle:checked ~ nav {
+        display: flex;
+    }
+    
     .intro {
         flex-direction: column;
         align-items: center;
