@@ -5,7 +5,7 @@ body {
     display: flex; 
     flex-direction: column; 
     min-height: 100vh; 
-    font-size: large;
+    font-size: larger;
 }
 
 /* Header Styles */
@@ -15,16 +15,16 @@ header {
 }
 
 header nav {
+    flex-wrap: wrap;
     display: flex; 
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 header nav a {
-    margin: 0 16px; 
     padding: 8px;
-    color: white; 
+    margin: 0 16px; 
     text-decoration: none; 
+    color: white; 
 }
 
 header nav a:hover {
@@ -36,27 +36,27 @@ header nav a:hover {
 }
 
 .hamburger-icon {
+    font-size: 25px;
     display: none;
     color: white;
-    font-size: 24px;
     cursor: pointer;
-    padding: 10px;
+    padding: 11px;
 }
 
 /* Footer Styles */
 footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    text-align: center; 
+    color: white; 
     padding: 16px;
     background: #491b1b; 
-    color: white; 
+    text-align: center; 
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-links {
-    display: flex;
     gap: 16px;
+    display: flex;
 }
 
 .footer-links a {
@@ -65,9 +65,9 @@ footer {
 }
 
 .footer-links img {
+    transition: transform 0.3s;
     width: 32px;
     height: 32px;
-    transition: transform 0.3s
 }
 
 .footer-links img:hover {
@@ -91,8 +91,8 @@ footer {
 
 .intro {
     align-items: center; 
-    display: flex; 
     gap: 16px;
+    display: flex; 
 }
 
 .intro-paragraph {
@@ -103,15 +103,15 @@ footer {
 
 .profile-image {
     height: auto;
-    max-width: 300px; 
     border-radius: 20%; 
+    max-width: 300px; 
 }
 
 /* Skills Styles */
 
 .skills-interests {
-    display: flex;
     justify-content: space-between;
+    display: flex;
 }
 
 .skills, .interests {
@@ -119,15 +119,15 @@ footer {
 }
 
 .skills ul, .interests ul {
-    padding: 0;
     list-style-type: none;
+    padding: 0;
 }
 
 .skills li, .interests li {
-    padding: 8px;
-    margin-bottom: 8px;
     background: #faf1f1;
+    padding: 8px;
     border-radius: 4px;
+    margin-bottom: 8px;
 }
 
 /* Social Media Styles */
@@ -146,9 +146,9 @@ footer {
 }
 
 .social-media img {
+    transition: transform 0.3s;
     width: 32px;
     height: 32px;
-    transition: transform 0.3s;
 }
 
 .social-media img:hover {
@@ -159,23 +159,23 @@ footer {
 
 .projects {
     display: grid;
-    margin-top: 32px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 32px;
     gap: 16px;
 }
 
 .project-items {
     background: whitesmoke;
-    padding: 16px;
     border-radius: 8px;
     box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
     text-align: center;
+    padding: 16px;
 }
 
 .projectImage {
+    border-radius: 8px;
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
     margin-bottom: 16px;
 }
 
@@ -187,41 +187,41 @@ footer {
 
 .contact-information {
     display: flex;
-    justify-content: space-between;
     gap: 32px;
+    justify-content: space-between;
 }
 
 .my-contact .contact-form { 
-    flex-grow: 1;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .my-contact {
-    background: whitesmoke;
     border-radius: 8px;
+    background: whitesmoke;
     padding: 16px;
     box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
     max-width: 70%;
 }
 
 .my-contact img {
-    max-width: 100%;
     border-radius: 8px;
+    max-width: 100%;
     margin-bottom: 16px;
 }
 
 .contact-form {
     background-color: #7a3f3f; 
     border-radius: 8px;
-    padding: 16px;
     box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+    padding: 16px;
 }
 
 .contact-form form {
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 400px;
 }
 
 .contact-form label {
@@ -230,26 +230,25 @@ footer {
 }
 
 .contact-form input, .contact-form textarea {
-    border: 2px solid black;
-    padding: 8px;
-    border-radius: 4px;
     font-size: 16px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 8px;
 }
 
 .contact-form button {
-    cursor: pointer;
     font-size: 20px;
     border-radius: 4px;
+    cursor: pointer;
     padding: 12px;
-    border: none;
-    font-weight: bolder;
     transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
-
+    font-weight: bolder;
+    border: none;
 }
 
 .contact-form button:hover {
+    transform: translateY(-2.5px);
     background-color: rgb(196, 187, 171);
-    transform: translateY(-2px);
 }
 
 .contact-form button:active {
@@ -258,25 +257,25 @@ footer {
 
 /* Video Demo Page Styles */
 .video-demo {
-    display: flex;
     margin-top: 32px;
+    display: flex;
 }
 
 .video-demo iframe {
-    border-radius: 8px;
     box-shadow: rgba(1, 1, 8, 0.25) 0px 27px 13px -5px, rgba(5, 0, 0, 0.3) 8px 0px 16px -8px;
+    border-radius: 8px;
 }
 
 /* Report Page Styles */
 .report p {
+    line-height: 1.5;
     text-align: justify;
     margin-bottom: 16px; 
-    line-height: 1.5;
 }
 
 .report p a:hover {
-    color: #1c6cc2;
     cursor: pointer;
+    color: #1c6cc2;
 }
 
 .validation {
@@ -289,8 +288,8 @@ footer {
 }
 
 .validation img {
-    max-width: 1200px;
     height: 1100px; 
+    max-width: 1200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -299,24 +298,24 @@ footer {
     }
 
     .hamburger-icon {
-        display: block;
         text-align: left;
+        display: block;
         padding: 16px;
     }
 
     header nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
         background: #491b1b;
+        flex-direction: column;
+        display: none;
+        width: 100%;
     }
 
     header nav a {
+        margin: 0;
+        box-sizing: border-box;
         text-align: center;
         padding: 10px;
-        margin: 0;
         width: 100%;
-        box-sizing: border-box;
     }
 
     #hamburger-toggle:checked ~ nav {
@@ -324,8 +323,8 @@ footer {
     }
 
     .intro {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         text-align: center;
     }
 
@@ -334,8 +333,8 @@ footer {
     }
 
     .skills-interests {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 
     .skills, .interests {
@@ -344,8 +343,8 @@ footer {
     }
 
     footer {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
         text-align: center;
     }  
 
@@ -354,14 +353,14 @@ footer {
     }
 
     .contact-information {
-        flex-direction: column;
         align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .my-contact, .contact-form {
-        max-width: 100%;
         width: 90%;
+        max-width: 100%;
     }
 
     .contact-form form{
@@ -369,14 +368,14 @@ footer {
     }
 
     .video-demo {
-        flex-direction: column;
         align-items: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .video-demo iframe {
-        width: 100%;
         height: 315px;
+        width: 100%;
     }
 
     .container {
@@ -392,8 +391,8 @@ footer {
     }
 
     .validation img {
-        max-width: 100%;
         height: 300px;
+        max-width: 100%;
         object-fit: contain;
     }
 }
