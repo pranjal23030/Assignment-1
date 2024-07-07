@@ -76,12 +76,6 @@ footer {
 
 /* Index Page Styles */
 
-.profile-image {
-    height: auto;
-    max-width: 150px; 
-    border-radius: 40%; 
-}
-
 .container {
     max-width: 1200px; 
     margin: auto;
@@ -128,31 +122,6 @@ footer {
     padding: 8px;
     border-radius: 4px;
     margin-bottom: 8px;
-}
-
-/* Social Media Styles */
-
-.social-media {
-    margin-top: 32px;
-}
-
-.social-media h2 {
-    margin-bottom: 16px;
-}
-
-.social-media a {
-    display: inline-block;
-    margin: 0 8px;
-}
-
-.social-media img {
-    transition: transform 0.3s;
-    width: 32px;
-    height: 32px;
-}
-
-.social-media img:hover {
-    transform: scale(1.5);
 }
 
 /* Project Page Styles */
@@ -241,7 +210,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     padding: 12px;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+    transition: background 0.4s, transform 0.3s, box-shadow 0.3s;
     font-weight: bolder;
     border: none;
 }
@@ -256,6 +225,7 @@ footer {
 }
 
 /* Video Demo Page Styles */
+
 .video-demo {
     margin-top: 32px;
     display: flex;
@@ -267,6 +237,7 @@ footer {
 }
 
 /* Report Page Styles */
+
 .report p {
     line-height: 1.5;
     text-align: justify;
@@ -293,6 +264,11 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+    .container {
+        padding: 16px;
+    }
+    
     header {
         padding: 0;
     }
@@ -378,14 +354,6 @@ footer {
         width: 100%;
     }
 
-    .container {
-        padding: 16px;
-    }
-
-    h1, h2, h3 {
-        text-align: center;
-    }
-
     .report p {
         font-size: 16px;
     }
@@ -394,5 +362,9 @@ footer {
         height: 300px;
         max-width: 100%;
         object-fit: contain;
+    }
+
+    .references {
+        font-size: 16px;
     }
 }
